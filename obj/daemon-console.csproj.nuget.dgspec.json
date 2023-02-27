@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/majdy/Documents/repos/HomesEngland/demo/console/daemon-console.csproj": {}
+  },
+  "projects": {
+    "/Users/majdy/Documents/repos/HomesEngland/demo/console/daemon-console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/majdy/Documents/repos/HomesEngland/demo/console/daemon-console.csproj",
+        "projectName": "daemon-console",
+        "projectPath": "/Users/majdy/Documents/repos/HomesEngland/demo/console/daemon-console.csproj",
+        "packagesPath": "/Users/majdy/.nuget/packages/",
+        "outputPath": "/Users/majdy/Documents/repos/HomesEngland/demo/console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/majdy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/Users/majdy/Documents/repos/DHCW/data-sharing-permissions/src/nuget": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.Identity.Web.Certificate": {
+              "target": "Package",
+              "version": "[1.25.10, )"
+            },
+            "Microsoft.Identity.Web.TokenCache": {
+              "target": "Package",
+              "version": "[1.25.10, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
