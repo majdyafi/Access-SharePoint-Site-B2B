@@ -2,20 +2,15 @@
 using Microsoft.Identity.Client;
 using Microsoft.Identity.Web;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 
 namespace SharePoint_Access
 {
-    class Program
+  class Program
     {
         private const string SITE = "Knowledge";
         private const string HOST = "majdio.sharepoint.com";
-        private const string MATERIAL = "Material"; //"67ab4c36-4696-44de-8b8c-4d915e65f51e";
+        private const string MATERIAL = "Material";
         
         static void Main(string[] args)
         {
@@ -66,7 +61,8 @@ namespace SharePoint_Access
 
             foreach (var item in materials)
             {
-                Console.WriteLine($"item: {item.Fields.AdditionalData["Title"]} {item.Fields.AdditionalData["URL"]} ");
+                Console.WriteLine
+                    ($"item: {item.Fields.AdditionalData["Title"]} {item.Fields.AdditionalData["URL"]} ");
             }
         }
         
