@@ -55,7 +55,7 @@ namespace SharePoint_Access
 
             GraphServiceClient graphServiceClient = GraphServiceClientInstance.GetAuthenticatedGraphClient(app, scopes);
             
-            var sites = await graphServiceClient
+            var materials = await graphServiceClient
                 .Sites
                 .GetByPath($"sites/{SITE}", HOST)
                 .Lists[MATERIAL]
@@ -64,7 +64,7 @@ namespace SharePoint_Access
                 .Expand(item => item.Fields)
                 .GetAsync();
 
-            foreach (var item in sites)
+            foreach (var item in materials)
             {
                 Console.WriteLine($"item: {item.Fields.AdditionalData["Title"]} {item.Fields.AdditionalData["URL"]} ");
             }
